@@ -1,0 +1,218 @@
+.navbar{
+    height: 5rem;
+    width: 100vw;
+    margin: 0 auto ;
+    padding: 1rem 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between ;
+    position: sticky;
+    top: 0;
+    z-index: 3;
+   background:#222;
+}
+
+.logo{
+    object-fit: cover;
+    height: 3rem;
+    width: 4rem;
+}
+
+.desktopMenulistItem{
+    margin: 1rem ;
+    color: white;
+    cursor: pointer;
+}
+
+.desktopMenulistItem:hover{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+}
+
+.active{
+    color: yellow;
+    padding-bottom: 0.5rem;
+    border-bottom: 3px solid yellow;
+}
+
+.desktopMenuBtn{
+background: white;
+color: black;
+border: none;
+display: flex;
+align-items: center;
+justify-content: center;
+padding: 0 1rem;
+border-radius: 2rem;
+
+}
+.desktopeMnuImg {
+ object-fit: cover;
+ height: 1.5rem;
+width: 1.5rem;
+margin: 0.5rem;
+}
+
+#intro{
+    height: calc(100vh - 4rem);
+   max-width: 75rem;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+   width: 100%;
+}
+
+.bg{
+    position: absolute;
+    z-index: -1;
+    top: 1rem;
+    right: 5rem;
+    margin-top: 70px;
+    border-radius: 50%;
+    object-fit: cover;
+    height: 50vh;
+}
+
+.introContent{
+    height: auto;
+  max-width: 75rem;
+  margin: 0 auto;
+    margin-top: 70px;
+    padding: 2rem;
+    font-size: 3rem;
+    font-weight: 700;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+
+.hello{
+    font-size: 1.75rem;
+    font-weight: 100;
+}
+
+.introName{
+ color: yellow;
+}
+.introPara{
+    font-size: medium;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+.btn{
+    margin-top: 10px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+.btn:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+
+/*   About section    */
+#skills{
+    overflow: hidden;
+    width: 100vw;
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+}
+
+.skillTitle{
+    font-size: 3rem;
+    font-weight: 600;
+    padding-top: 3rem;
+    margin-bottom: 1.5rem;
+}
+
+.skillDesc{
+    font-weight: 400;
+    font-size: 1rem;
+    max-width: 50rem;
+    padding: 0 2rem;
+}
+
+.skillBars{
+    margin: 1.5rem;
+    width: 100vw;
+    text-align: left;
+    max-width: 80%;
+}
+.skillBar{
+        display: flex;
+    margin: 1rem;
+    padding: 1.5rem 2rem;
+    border-radius: 0.5rem;
+    background: rgb(50, 50, 50);
+
+}
+
+.skillBarImg{
+    object-fit: cover;
+    height: 3rem;
+    width: 3rem;
+    margin-right: 2rem;
+}
+
+.skillBarText>p {
+    font-size: 0.9rem;
+    font-weight: 200;
+}
+
+
+.toggleBtn {
+  margin-top: 10px;
+  padding: 8px 16px;
+  background: linear-gradient(135deg, #6a11cb, #2575fc);
+  border: none;
+  border-radius: 20px;
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggleBtn:hover {
+  background: linear-gradient(135deg, #2575fc, #6a11cb);
+  transform: scale(1.05);
+}
+
+
+
+@media screen and (max-width:400px) {
+    .navbar{
+    flex-direction: column;   /* Stack items vertically */
+    gap: 1rem;
+    text-align: center;
+
+    }
+    
+    .skillBarText>p{
+    font-size: 3vw;
+    max-width: 480px;
+    }
+    
+    .skillBarImg{
+        height: 2.25rem;
+        width: 2.25rem;
+    }
+    .skillBarText>h2{
+        font-size: 5vw;
+    }
+   
+  
+}
+
